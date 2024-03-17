@@ -21,8 +21,8 @@ const {userModel}= require("../Models/user.Model")
     } catch (error) {
         
     }
-}) 
-userRoute.post( "/login", async (req, res)=>{
+ }) 
+ userRoute.post( "/login", async (req, res)=>{
       const {email, password} = req.body;
       try {
       const user=await userModel.findOne({email})

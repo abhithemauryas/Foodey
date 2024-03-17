@@ -1,6 +1,7 @@
 const express =require("express")
 const {Connection}= require("./db")
 const {userRoute}= require("./Routes/user.Routes")
+const {ProductRoute}=require("./Routes/product.Routes");
 
 
 const  app=express()
@@ -8,6 +9,9 @@ const  app=express()
 
 app.use(express.json())
 app.use(userRoute)
+app.use(ProductRoute)
+
+
 
 
 app.get("/",(req,res)=>{

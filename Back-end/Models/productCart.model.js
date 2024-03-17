@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-const productSchima= mongoose.Schema({
+const cartSchima= mongoose.Schema({
     name: {type:String, require:true},
     image1:{type:String, require:true}, 
     image2:{type:String, require:true},
@@ -12,5 +12,6 @@ const productSchima= mongoose.Schema({
     
 })
 
-const ProductModel= mongoose.model( 'Product',productSchima);
-module.exports = {ProductModel};
+
+const cartModel= mongoose.model( 'cart',cartSchima);
+module.exports = {cartModel};
