@@ -35,6 +35,7 @@ const {userModel}= require("../Models/user.Model")
             }
         })
 
+        
       } catch (error) {
          res.status(400).send("User not found");
          
