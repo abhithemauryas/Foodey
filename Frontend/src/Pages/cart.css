@@ -1,0 +1,16 @@
+
+  .alldiv{
+    display: flex;
+   width: 90%;
+   margin: auto;
+  }
+
+  @media all and (min-width: 100px) and (max-width: 450px) {
+   .alldiv {
+      display: flex;
+      flex-direction: column;
+    }
+    #fullcard{
+        margin: auto;
+    }
+}

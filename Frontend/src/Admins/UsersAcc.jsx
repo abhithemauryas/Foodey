@@ -203,7 +203,7 @@ const MobileNav = ({ onOpen, ...rest }) => {
         onClick={onOpen}
         variant="outline"
         aria-label="open menu"
-        icon={<FiMenu />}
+        icon={<FiMenu/>}
       />
 
       <Image
@@ -258,7 +258,7 @@ const MobileNav = ({ onOpen, ...rest }) => {
               <MenuItem>Profile</MenuItem>
               <MenuItem>Settings</MenuItem>
               <MenuItem>Billing</MenuItem>
-              <MenuDivider />
+              <MenuDivider/>
               <MenuItem>Sign out</MenuItem>
             </MenuList>
           </Menu>

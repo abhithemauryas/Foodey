@@ -1,6 +1,6 @@
 
 # FOODEY😊❤️
-# Name :- aBHISHEK KUMAR MAURYA.
+# Name :- ABHISHEK KUMAR MAURYA.
 
 # Discription :- 
 This is the clone of 1800Flowers.com that 

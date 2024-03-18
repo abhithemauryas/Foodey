@@ -7,6 +7,7 @@ import Cakes from "../Cards/Cakes";
 import ProCarousal from "./../ProSideBar/ProCarousal";
 import axios from "axios";
 import { CartContext } from "./cartlength";
+import "./cart.css"
 import { Link as RouterLink } from "react-router-dom";
 import {
   Divider,
@@ -62,19 +63,21 @@ export default function Cart() {
       <HoveNav />
 
       <div
-        style={{
-          display: "flex",
-        }}
-      >
-        <div>
+      className="alldiv"
+        // style={{
+        
+        // }}
+        >
+        <div >
           {cartData.map((item) => (
-            <div
+            <div id="fullcard"
               style={{
                 display: "flex",
-                // border: "1px solid grey",
+                // border: "11px solid yellow",
                 alignItems: "center",
                 width: "80%",
                 padding: "5px",
+                // border:" 11px sole red",
                 borderRadius: "15px",
                 marginTop: "5px",
                 // boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
@@ -107,8 +110,8 @@ export default function Cart() {
 
                   <Text fontSize="2xl">₹ {item.price}</Text>
                 </HStack>
-                <Button
-                  ml="70%"
+                <Button 
+                  ml="60%"
                   colorScheme="red"
                   onClick={() => deletecartItem(item.id)}
                 >
@@ -119,9 +122,10 @@ export default function Cart() {
           ))}
         </div>
 
-        <Container>
-          <Box
+        <Container className="total-container">
+          <Box className="total-box"
             padding="15px"
+            // border={"10px solid red"}
             boxShadow="rgb(204, 219, 232) 3px 3px 6px 2px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset"
             // boxShadow="rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset"
           >

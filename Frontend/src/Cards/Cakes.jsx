@@ -10,7 +10,7 @@ export default function Cakes() {
         Shop Our Best Selling Chocolate Covered Cakes
       </Heading>
       <div className="prople_card">
-        <RouterLink to="/cakes">
+        <RouterLink to="./cakes">
           <div>
             <img src="https://www.fnp.com/images/pr/l/v20221214145641/chocolate-truffle-cream-cake-half-kg_1.jpg" />
             <Heading as="h1" size="sm" mb={5} pb={2} mt={5}>
@@ -66,3 +66,4 @@ export default function Cakes() {
     </>
   );
 }
+

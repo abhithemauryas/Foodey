@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* @media all and (min-width: 100px) and (max-width: 450px) {
+  .total-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .prople_card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .smpban {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+} */
+

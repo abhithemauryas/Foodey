@@ -24,14 +24,14 @@ import Delhivery from "../Pages/Delhivery";
 export default function AllRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Home />}></Route>
+      <Route path="/" element={<Home/>}></Route>
       <Route path="/all_products" element={<AllProducts />}></Route>
       <Route path="/blog" element={<Blog />}></Route>
       <Route
         path="/cart"
         element={
           <PrivateRoutes>
-            <Cart />
+            <Cart/>
           </PrivateRoutes>
         }
       ></Route>
@@ -43,22 +43,22 @@ export default function AllRoutes() {
           </PrivateRoutes>
         }
       ></Route>
-      <Route path="/signup" element={<Signup />}></Route>
-      <Route path="/plants" element={<Plants />}></Route>
+      <Route path="/signup" element={<Signup/>}></Route>
+      <Route path="/plants" element={<Plants/>}></Route>
       <Route
         path="/singleProducts/:id"
         element={
           <PrivateRoutes>
-            <SingleProducts />
+            <SingleProducts/>
           </PrivateRoutes>
         }
       ></Route>
-      <Route path="/login" element={<LogInPop />}></Route>
+      <Route path="/login" element={<LogInPop/>}></Route>
       <Route
         path="/flowers"
         element={
           <PrivateRoutes>
-            <Flowers />
+            <Flowers/>
           </PrivateRoutes>
         }
       ></Route>
